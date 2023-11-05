@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 300px; /* Adjust the width of the grid container */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+.game-grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-bottom: 5px; /* Center vertically within the viewport */
+}
+
+.start-button-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+
+
+
+/* Update the CSS for closed doors */
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: brown; /* Light gray background for closed doors */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+}
+
+/* Update the CSS for the open door with the mole */
+.mole {
+  width: 80px;
+  height: 80px;
+  background-image: url("./assets/cartoon-mole.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  box-shadow: 0 0 20px brown; /* Add a brown box shadow for the open door */
+}
